@@ -8,6 +8,7 @@ add_library(spine-c STATIC
   Animation.c
   AnimationState.c
   AnimationStateData.c
+  Array.c
   Atlas.c
   AtlasAttachmentLoader.c
   Attachment.c
@@ -15,6 +16,8 @@ add_library(spine-c STATIC
   Bone.c
   BoneData.c
   BoundingBoxAttachment.c
+  ClippingAttachment.c
+  Color.c
   Event.c
   EventData.c
   IkConstraint.c
@@ -24,9 +27,12 @@ add_library(spine-c STATIC
   PathAttachment.c
   PathConstraint.c
   PathConstraintData.c
+  PointAttachment.c
   RegionAttachment.c
   Skeleton.c
+  SkeletonBinary.c
   SkeletonBounds.c
+  SkeletonClipping.c
   SkeletonData.c
   SkeletonJson.c
   Skin.c
@@ -34,9 +40,13 @@ add_library(spine-c STATIC
   SlotData.c
   TransformConstraint.c
   TransformConstraintData.c
+  Triangulator.c
   VertexAttachment.c
+  VertexEffect.c
   extension.c
 )
+
+
 
 target_include_directories(spine-c PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} spine)
 target_compile_definitions(spine-c PRIVATE -D_CRT_SECURE_NO_WARNINGS)

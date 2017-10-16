@@ -4,7 +4,7 @@ import os
 
 class SpineConan(ConanFile):
     name = "spine"
-    version = "3.6.32"
+    version = "3.6.36"
     license = "<Put the package license here>"
     url = "<Package recipe repository url here, for issues about the package>"
     settings = "os", "compiler", "build_type", "arch"
